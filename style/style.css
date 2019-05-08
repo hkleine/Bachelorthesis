@@ -39,6 +39,7 @@ body, html {
 #device {
   position: absolute;
   left: 30%;
+  top: 400px;
   margin-top: 100px;
   max-width: 750px;
 }
@@ -116,6 +117,21 @@ body, html {
 }
 
 .features {
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
   display: grid;
   grid-template-columns: auto auto;
+}
+
+.feature-icon {
+  max-width: 100px;
+}
+
+.features-container h1 {
+  margin-top: 200px;
+  text-align: center;
+  color: #4f4949;
+  font-size: 40px;
+  margin-bottom: 30px;
 }
