@@ -37,8 +37,8 @@ body, html {
 }
 
 #device {
-  display: block;
-  margin: 0 auto;
+  position: absolute;
+  left: 30%;
   margin-top: 100px;
   max-width: 750px;
 }
@@ -51,7 +51,6 @@ body, html {
 .contaier {
   overflow: hidden;
   margin: 0 auto;
-  height: 100%;
   padding: 20px;
   width: 85%;
   background: #efefef;
@@ -92,6 +91,7 @@ body, html {
 }
 
 .sensor-dashboard-heading {
+  margin-top: 100px;
   color: #4f4949;
   text-align: left;
 }
@@ -113,4 +113,9 @@ body, html {
 .sensor-dashboard-text {
   text-align: left;
   line-height: 1.5;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: auto auto;
 }
