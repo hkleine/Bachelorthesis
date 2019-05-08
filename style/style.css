@@ -55,6 +55,9 @@ body, html {
   padding: 10px 15px;
   background: #4286f4;
   color: #fff;
+  display: block;
+  margin: 0 auto;
+  width: 170px;
 }
 
 .btn-git:hover {
