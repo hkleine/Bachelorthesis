@@ -1,0 +1,78 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+
+	<title>Sensor Dashboard</title>
+</head>
+<body>
+	<!-- Kopfzeile -->
+	<header class="cd-main-header">
+		<!-- Logo (Logo Designer: Samantha Stefan) -->
+		<a href="{% url 'mainView' %}" class="cd-logo"><img src="{% static 'images/logo.png' %}" alt="Logo" width="70"></a>
+		<h1>Sensor Dashboard</h1>
+		<label class="dropdown">
+			<!-- Mobile Dropdown Menü -->
+    	<i class="fas fa-bars"></i>
+  		<input type="checkbox" class="dd-input" id="test">
+			<!-- Sidebar Menü -->
+  		<ul class="dd-menu">
+    		<li><a href="{% url 'mainView' %}" class="sidebar-icon"><i class="far fa-chart-bar"></i> Dashboard</a></li>
+				<li class="divider"></li>
+    		<li><a href="{% url 'addroomView' %}"  class="sidebar-icon"><i class="far fa-plus-square"></i> Add Room</a></li>
+  		</ul>
+		</label>
+		<a href="{% url 'logout' %}" id="logout">logout</a>
+		<p>Welcome, {{ user.get_full_name }}</p>
+
+	</header> <!-- .cd-main-header -->
+
+	<main class="cd-main-content">
+		<nav class="cd-side-nav">
+			<ul>
+				<li>
+					<a href="{% url 'mainView' %}" class="sidebar-icon-collapsed"><i class="far fa-chart-bar"></i></a>
+					<a href="{% url 'mainView' %}" class="sidebar-icon"><i class="far fa-chart-bar"></i> <span>Dashboard</span></a>
+				</li>
+				<li>
+					<a href="{% url 'addroomView' %}" class="sidebar-icon-collapsed"><i class="far fa-plus-square"></i></a>
+					<a href="{% url 'addroomView' %}"  class="sidebar-icon"><i class="far fa-plus-square"></i> <span class="sidebar-text">Add Room</span></a>
+				</li>
+			</ul>
+
+		</nav>
+		<div class="content-wrapper">
+			{% block content %}
+      {% endblock %}
+		</div> <!-- .content-wrapper -->
+	</main> <!-- .cd-main-content -->
+
+<!-- Funktion für das Dropdown-Menü -->
+<script>
+	function dropdown() {
+	  document.getElementById("dropdown").classList.toggle("show");
+	}
+	// schließt das Dropdown-Menü
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+	    var dropdowns = document.getElementsByClassName("dropdown-content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+	      var openDropdown = dropdowns[i];
+	      if (openDropdown.classList.contains('show')) {
+	        openDropdown.classList.remove('show');
+	      }
+	    }
+	  }
+	}
+</script>
+
+</body>
+</html>
