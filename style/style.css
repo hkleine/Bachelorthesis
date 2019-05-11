@@ -54,11 +54,6 @@ body, html {
   box-shadow: 0px 1px 4px 1px rgba(150,150,150,0.55);
 }
 
-#device2 {
-    max-width: 500px;
-    margin-left: 300px;
-}
-
 #logo {
   max-width: 100px;
   float: left;
@@ -82,6 +77,16 @@ body, html {
   font-weight: 500;
   padding: 10px 15px;
   background: #4286f4;
+  color: #fff;
+  display: block;
+  margin: 50px auto;
+  width: 140px;
+}
+
+.btn-git2 {
+  text-decoration: none;
+  font-size: 240px;
+  font-weight: 500;
   color: #fff;
   display: block;
   margin: 50px auto;
@@ -126,6 +131,7 @@ body, html {
 .sensor-dashboard-text {
   text-align: left;
   line-height: 1.5;
+  width: 30vw;
 }
 
 .features {
@@ -138,12 +144,13 @@ body, html {
 }
 
 .feature-icon {
-  max-width: 100px;
+  max-width: 150px;
   margin-bottom: 50px;
 }
 
 .features-container {
   text-align: center;
+  margin-bottom: 300px;
 }
 
 .features-heading {
@@ -168,8 +175,53 @@ body, html {
   width: 70px;
 }
 
+.feature-text p {
+  text-align: center;
+  line-height: 1.5;
+}
+
 .feature-text h2 {
   font-size: 25px;
   color: #4f4949;
   margin-bottom: 20px;
+}
+
+.bottom {
+  height: 100%;
+  width: 100%;
+  background-image: url("landingpage-bottom.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.bottom-content {
+  width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+#device2 {
+    width: 350px;
+    height: 600px;
+}
+
+.bottom-text h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.bottom-text hr {
+  margin-bottom: 15px;
+  width: 50px;
+  display: block;
+  border-style: inset;
+  border: 2px solid #fff;
+  width: 70px;
+}
+
+.bottom-text p {
+  width: 500px;
+  line-height: 1.5;
 }
