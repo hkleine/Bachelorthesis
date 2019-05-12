@@ -134,6 +134,27 @@ header {
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
 
+/* Technologies */
+
+.technologies-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 300px;
+}
+
+.technologies {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.technologies i {
+  font-size: 100px;
+}
+
+.technology-item {
+  height: 300px;
+  border: 1px solid black;
+}
 
 /* Container */
 .contaier {
@@ -241,7 +262,7 @@ header {
 
 .features-heading {
   margin: 0 auto;
-  width: 100px;
+  width: 200px;
   margin-bottom: 50px;
 }
 
