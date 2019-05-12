@@ -9,7 +9,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -171,7 +171,7 @@ header {
 /* Dashboard */
 .sensor-dashboard {
   padding: 20px;
-  margin-top: 300px;
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
 }
@@ -194,7 +194,11 @@ header {
 @media (min-width: 400px) {}
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+  .sensor-dashboard {
+    margin-top: 300px;
+  }
+}
 
 /* Larger than tablet */
 @media (min-width: 750px) {
