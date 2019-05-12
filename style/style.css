@@ -86,7 +86,7 @@ header {
 
 #device {
   display: block;
-  max-width: 450px;
+  width: 450px;
   margin: 0 auto;
 }
 
@@ -109,14 +109,14 @@ header {
   }
 
   #device {
-    max-width: 500px;
+    width: 500px;
   }
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
   #device {
-    max-width: 750px;
+    width: 750px;
   }
 }
 
