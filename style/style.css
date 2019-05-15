@@ -181,7 +181,8 @@ header {
 
 #device3 {
   margin-top: 50px;
-  height: 350px;
+  max-width: 90%;
+  height: auto;
   border-radius: 5px;
   -webkit-box-shadow: 0px 1px 4px 1px rgba(150,150,150,0.55);
   -moz-box-shadow: 0px 1px 4px 1px rgba(150,150,150,0.55);
@@ -200,28 +201,20 @@ header {
   .sensor-dashboard {
     margin-top: 300px;
   }
-  #device3 {
-    height: 400px;
-  }
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
-  .sensor-dashboard {
-    flex-direction: row;
-  }
-
   #device3 {
-    margin-top: 0px;
     margin-left: 150px;
-    height: 450px;
   }
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-    #device3 {
-      height: 600px;
+
+    .sensor-dashboard {
+      flex-direction: row;
     }
 }
 
@@ -280,6 +273,7 @@ header {
 .bottom {
   height: 100%;
   width: 100%;
+  margin: 0 auto;
   background-image: url("landingpage-bottom.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -287,7 +281,7 @@ header {
 }
 
 .bottom-container {
-  width: 80%;
+  width: max-width: 700px;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -301,7 +295,8 @@ header {
 #device2 {
     margin-top: 200px;
     margin-left: 50px;
-    height: 350px;
+    height: auto;
+    width: auto;
 }
 
 .bottom-text hr {
@@ -310,9 +305,7 @@ header {
 
 /* Larger than mobile */
 @media (min-width: 400px) {
-  #device2 {
-      height: 350px;
-  }
+
 }
 
 /* Larger than phablet (also point when grid becomes active) */
@@ -329,16 +322,12 @@ header {
     width: 50%;
     flex-direction: row;
   }
-
-  #device2 {
-      margin-top: 100px;
-      margin-left: 250px;
-      height: 500px;
-  }
 }
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+
+}
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {  }
