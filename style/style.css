@@ -134,36 +134,6 @@ header {
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
 
-/* Technologies */
-
-.technologies-container {
-  width: 100%;
-  text-align: center;
-  margin-top: 500px;
-}
-
-.technologies {
-  margin-top: 100px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.technologies i {
-  font-size: 150px;
-}
-
-#html {
-  color: #FC490B;
-}
-
-#css {
-  color: #2196F3;
-}
-
-#js {
-  color: #F7E018;
-}
-
 /* Container */
 .contaier {
   color: #4f4949;
@@ -199,7 +169,7 @@ header {
 
 /* Dashboard */
 .sensor-dashboard {
-  padding: 20px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
 }
@@ -230,6 +200,9 @@ header {
   .sensor-dashboard {
     margin-top: 300px;
   }
+  #device3 {
+    height: 400px;
+  }
 }
 
 /* Larger than desktop */
@@ -240,13 +213,17 @@ header {
 
   #device3 {
     margin-top: 0px;
-    margin-left: 100px;
+    margin-left: 150px;
     height: 450px;
   }
 }
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    #device3 {
+      height: 600px;
+    }
+}
 
 /* Features */
 .features {
@@ -322,7 +299,7 @@ header {
 }
 
 #device2 {
-    margin-top: 100px;
+    margin-top: 200px;
     margin-left: 50px;
     height: 350px;
 }
@@ -349,7 +326,7 @@ header {
 /* Larger than tablet */
 @media (min-width: 750px) {
   .bottom-container {
-    width: 60%;
+    width: 50%;
     flex-direction: row;
   }
 
