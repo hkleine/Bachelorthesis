@@ -169,20 +169,22 @@ header {
 
 /* Dashboard */
 .sensor-dashboard {
-  padding: 30px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
 }
 
 .sensor-dashboard-text {
-  margin-top: 50px;
   text-align: left;
 }
 
 #device3 {
+  height: 300px;
+  width: auto;
+  margin-left: 0;
   margin-top: 50px;
-  max-width: 90%;
-  height: auto;
   border-radius: 5px;
   -webkit-box-shadow: 0px 1px 4px 1px rgba(150,150,150,0.55);
   -moz-box-shadow: 0px 1px 4px 1px rgba(150,150,150,0.55);
@@ -190,7 +192,8 @@ header {
 }
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+}
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
@@ -198,24 +201,28 @@ header {
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-  .sensor-dashboard {
-    margin-top: 300px;
-  }
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
   #device3 {
-    margin-left: 150px;
+    height: 500px;
+    width: auto;
   }
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
+  .sensor-dashboard {
+    flex-direction: row;
+  }
 
-    .sensor-dashboard {
-      flex-direction: row;
-    }
+  #device3 {
+    margin-left: 100px;
+    margin-top: 0;
+    height: 600px;
+    width: auto;
+  }
 }
 
 /* Features */
@@ -271,6 +278,7 @@ header {
 
 /* Bottom (Reposonsive Desgin) */
 .bottom {
+  overflow: hidden;
   height: 100%;
   width: 100%;
   margin: 0 auto;
@@ -281,22 +289,19 @@ header {
 }
 
 .bottom-container {
-  width: max-width: 700px;
-  margin: auto;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 50px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .bottom-text {
-  width: 300px;
-  margin-top: 100px;
 }
 
 #device2 {
-    margin-top: 200px;
-    margin-left: 50px;
-    height: auto;
-    width: auto;
+  height: 300px;
+  width: auto;
 }
 
 .bottom-text hr {
@@ -305,28 +310,36 @@ header {
 
 /* Larger than mobile */
 @media (min-width: 400px) {
-
 }
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
-    .bottom-text {
-      margin-top: 200px;
-      width: 400px;
-    }
+  #device2 {
+    height: 400px;
+    width: auto;
+  }
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-  .bottom-container {
-    width: 50%;
-    flex-direction: row;
+  #device2 {
+    height: 600px;
+    width: auto;
   }
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+  #device2 {
+    height: 700px;
+    width: auto;
+    margin-left: 200px;
+  }
 
+  .bottom-container {
+    margin-top: 200px;
+    flex-direction: row;
+  }
 }
 
 /* Larger than Desktop HD */
