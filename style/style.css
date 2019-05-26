@@ -212,12 +212,16 @@ header {
 
 /* Larger than tablet */
 @media (min-width: 750px) {
+  #device3 {
+    height: 500px;
+    width: auto;
+  }
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
   #device3 {
-    height: 500px;
+    height: 400px;
     width: auto;
   }
 }
@@ -232,6 +236,13 @@ header {
   #device3 {
     margin-left: 100px;
     margin-top: 0;
+    height: 550px;
+    width: auto;
+  }
+}
+
+@media (min-width : 1824px) {
+  #device3 {
     height: 600px;
     width: auto;
   }
