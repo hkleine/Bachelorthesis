@@ -135,6 +135,7 @@ header {
 @media (min-width: 1200px) {
   #device {
     width: 650px;
+    margin-bottom: 400px;
   }
 }
 
@@ -225,6 +226,7 @@ header {
 @media (min-width: 1200px) {
   .sensor-dashboard {
     flex-direction: row;
+    margin-top: 300px;
   }
 
   #device3 {
