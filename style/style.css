@@ -134,6 +134,12 @@ header {
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
   #device {
+    width: 650px;
+  }
+}
+
+@media (min-width : 1824px) {
+  #device {
     width: 750px;
   }
 }
