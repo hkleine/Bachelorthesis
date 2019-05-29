@@ -313,10 +313,10 @@ header {
 
 .bottom-container {
   width: 40%;
-  margin: 0 auto;
   margin-top: 50px;
+  margin-left: 40px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .resource {
@@ -361,6 +361,7 @@ header {
   }
 
   .bottom-container {
+    margin: 0 auto;
     margin-top: 200px;
     flex-direction: row;
   }
