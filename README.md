@@ -1,6 +1,6 @@
 # Bachelorthesis
 
-Entwurf und Implementierung einer Klimaüberwachung in Wohn- und Büroräumen mit webbasierter Nutzeroberfläche
+#### Entwurf und Implementierung einer Klimaüberwachung in Wohn- und Büroräumen mit webbasierter Nutzeroberfläche
 
 Verwendete Technologien:
 - Backend: Django
